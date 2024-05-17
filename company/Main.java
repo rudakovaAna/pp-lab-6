@@ -15,7 +15,7 @@ public class Main {
         Worker worker4 = new Worker("Eva", 2050.0, 4, "2022-04-01", "Worker");
         Manager manager1 = new Manager("Michael", 3500.0, 5, "2020-05-01", "Manager");
 
-        // Dodajemy dodatkowych pracowników i menedżerów do celów wyszukiwania duplikatów
+
         Worker worker5 = new Worker("David", 2100.0, 2, "2021-06-01", "Worker");
         Manager manager2 = new Manager("Sarah", 3800.0, 2, "2021-07-01", "Manager");
 
@@ -28,7 +28,6 @@ public class Main {
         employees.add(worker5);
         employees.add(manager2);
 
-        // Zliczanie sumy pensji
         double totalSalary = 0;
         double totalManagerSalary = 0;
         double totalWorkerSalary = 0;
@@ -46,12 +45,10 @@ public class Main {
         System.out.println("Total salary of all managers: " + totalManagerSalary);
         System.out.println("Total salary of all workers: " + totalWorkerSalary);
 
-        // Wyświetlanie kodów hash
         for (Employee employee : employees) {
             System.out.println(employee.getName() + " has code: " + employee.hashCode());
         }
 
-        // Porównanie instancji z duplikującymi się ID
         Worker workerDuplicate = new Worker("David", 2100.0, 2, "2021-06-01", "Worker");
 
         for (Employee employee : employees) {
