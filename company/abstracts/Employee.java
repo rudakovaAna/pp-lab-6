@@ -50,4 +50,3 @@ public abstract class Employee implements Employable {
         return id == employee.id;
     }
 }
-
